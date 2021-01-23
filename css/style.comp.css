@@ -366,7 +366,7 @@ body {
     right: 0;
     z-index: -1;
     display: block;
-    background-image: url(/img/hero.jpg);
+    background-image: url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -435,7 +435,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    background-image: url(../img/back-customers.jpg);
+    background-image: url(img/back-customers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
