@@ -77,6 +77,8 @@ body {
     margin-bottom: 1.5rem;
     filter: brightness(75%);
     transform: scale(1);
+    border-radius: 5px;
+    overflow: hidden;
     transition: all 0.5s; }
     @media only screen and (max-width: 46.875em) {
       .cities__img {
@@ -433,7 +435,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    background-image: url(/img/back-customers.jpg);
+    background-image: url(../img/back-customers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
