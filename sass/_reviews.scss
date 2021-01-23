@@ -30,19 +30,6 @@
       }
     }
 
-    // &::before {
-    //   content: "\201c";
-    //   display: block;
-    //   font-size: 10rem;
-    //   position: absolute;
-    //   top: -8rem;
-    //   left: -2rem;
-
-    //   @media only screen and (max-width: $bp-average) {
-
-    //   }
-    // }
-
     &:not(:last-child) {
       margin-right: 5rem;
 
