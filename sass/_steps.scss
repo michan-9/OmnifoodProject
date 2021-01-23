@@ -1,0 +1,69 @@
+.works {
+  display: flex;
+
+  @media only screen and (max-width: $bp-smallest) {
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  &__imgBox {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $bp-average) {
+      flex: 0 0 25%;
+      margin-right: 3rem;
+    }
+  }
+
+  &__img {
+    width: 30rem;
+    height: auto;
+
+    @media only screen and (max-width: $bp-average) {
+      width: 20rem;
+      height: auto;
+    }
+  }
+
+  &__steps {
+    flex: 1;
+    margin-top: 7rem;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-average) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__number {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color-primary);
+    border-radius: 50%;
+    height: 5rem;
+    margin-right: 2rem;
+    flex: 0 0 10%;
+  }
+
+  &__imgButton {
+    height: 5rem;
+    width: auto;
+    margin-right: 2rem;
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+  }
+}

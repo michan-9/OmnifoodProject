@@ -1,0 +1,36 @@
+.features {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media only screen and (max-width: $bp-average) {
+    flex-direction: column;
+  }
+
+  &__icon {
+    height: 10rem;
+    width: 10rem;
+    margin: 2.5rem auto;
+    fill: var(--color-primary);
+    display: block;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    @media only screen and (max-width: $bp-average) {
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+
+      @media only screen and (max-width: $bp-average) {
+        margin-right: 0;
+      }
+    }
+  }
+}

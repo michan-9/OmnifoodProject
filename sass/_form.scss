@@ -1,0 +1,81 @@
+.form {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  line-height: normal;
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
+
+  & label {
+    flex: 0 0 30%;
+  }
+
+  & input,
+  & textarea {
+    font-size: inherit;
+    font-family: inherit;
+    flex: 1;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--color-primary);
+    }
+
+    &::-webkit-input-placeholder {
+      color: #eee;
+    }
+  }
+
+  &__box {
+    display: flex;
+    padding: 1rem;
+  }
+
+  &__checkbox {
+    display: flex;
+    align-items: center;
+
+    &-input {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__buttonBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+//////////////////////
+// Second option
+/*
+   &__name,
+  &__email,
+  &__location,
+  &__newsletter,
+  &__comment {
+    flex: 0 0 30%;
+  }
+
+  &__inputName,
+  &__inputEmail,
+  &__inputMsg {
+    font-size: inherit;
+    font-family: inherit;
+    flex: 1;
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(color-primary;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #eee;
+    }
+  }
+  */

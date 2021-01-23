@@ -1,0 +1,36 @@
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-average: 46.875em; // 750px
+$bp-small: 34.375em; // 550px
+$bp-smallest: 28.125em; // 450px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 43.75%;
+  }
+
+  // @media only screen and (max-width: $bp-small) {
+  //   font-size: 37.5%;
+  // }
+}
+
+body {
+  font-family: "Lato", sans-serif, Arial;
+  font-weight: 300;
+  line-height: 1.6;
+}

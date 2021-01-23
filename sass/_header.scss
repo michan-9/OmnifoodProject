@@ -1,0 +1,28 @@
+.header {
+  &__navBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+  }
+
+  &__heroBox {
+    display: flex;
+    align-items: center;
+    height: 65vh;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 60vh;
+    }
+  }
+
+  &__hero {
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    height: 10rem;
+  }
+}
